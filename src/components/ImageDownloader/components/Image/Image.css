@@ -1,0 +1,70 @@
+.image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.image-wrapper.removing {
+    transform: scale(0, 0);
+    transition: transform, 0.5s;
+}
+
+.image-wrapper:hover {
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+}
+
+.image-name {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper:hover .image-name {
+    bottom: 0;
+    /*opacity: 1;*/
+    transition: bottom 0.5s;
+}
+
+.remove-image-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.image-wrapper:hover .remove-image-button {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.remove-image-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.remove-image-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+

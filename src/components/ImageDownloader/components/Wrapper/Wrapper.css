@@ -1,0 +1,9 @@
+.image-downloader-wrapper {
+    background-color: white;
+    width: 80%;
+    min-height: 100px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: black;
+    padding: 20px;
+}
