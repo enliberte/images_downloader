@@ -1,0 +1,13 @@
+.drop-area {
+    border-radius: 15px;
+    border: #85d096 2px dotted;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-area.over {
+    background-color: #95da92;
+}
